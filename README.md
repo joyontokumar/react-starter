@@ -1,4 +1,4 @@
-# REACT JS PROJECT STARTER
+** REACT JS PROJECT STARTER **
 
 ## Available Scripts
 
