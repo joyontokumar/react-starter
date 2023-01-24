@@ -27,7 +27,7 @@ const App = ({ postInfo, fetchPosts }: any) => {
                   className="aspect-square"
                 />
                 <div className="inner-body p-5">
-                  <h3 className="text-lg">{post?.title}</h3>
+                  <h3 className="text-lg leading-6 mb-4">{post?.title}</h3>
                   <p className="text-base">{post?.body}</p>
                 </div>
               </div>
