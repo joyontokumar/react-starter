@@ -1,13 +1,14 @@
 import axios from "axios";
 import { FETCH_POSTS, SUCCESS_POSTS, ERROR_POSTS } from "../types/types";
 
-// inital fetch api call
+// inital fetch posts
 const initalFetch = () => {
   return {
     type: FETCH_POSTS,
   };
 };
 
+// successfully fetch posts
 const successPosts = (successData: any) => {
   return {
     type: SUCCESS_POSTS,
@@ -15,6 +16,7 @@ const successPosts = (successData: any) => {
   };
 };
 
+// fail fetch posts
 const errorPosts = (errorMessage: any) => {
   return {
     type: ERROR_POSTS,
@@ -22,8 +24,7 @@ const errorPosts = (errorMessage: any) => {
   };
 };
 
-//  finally fetch api call
-
+// posts fetch api call
 export const fetchPosts = () => {
   return (dispatch: any) => {
     dispatch(initalFetch());
